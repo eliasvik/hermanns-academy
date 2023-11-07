@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermann's Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>Hermann's Academy</div>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <img src="logo.png" id="logo">
+            <h1>Become a Master of Meeting Booking</h1>
+            <p>Join Hermann the Kaiser in mastering the art of power booking days.</p>
+            <div class="video-container">
+                <video id="hermannvideo" loop>
+                  <source src="WIN_20231106_15_51_46_Pro.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
+                <button id="playButton">
+                    <img src="playbtn.jpg" alt="Play" id="playIcon"/>
+                </button>
+              </div>
+              <br>
+            <a href="#signup" class="cta-button">Enroll Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h2>Our Program</h2>
+            <div class="course">
+                <h3>Power Booking Day Mastery</h3>
+                <p>Learn the secrets to effective meeting scheduling and maximize your productivity with Hermann the Kaiser.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Hermann's Academy</h2>
+            <p>Welcome to the ultimate training program for becoming an unparalleled meeting booker under the tutelage of Hermann the Kaiser.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <br>
+                <input type="email" placeholder="Your Email" required>
+                <br>
+                <textarea placeholder="Your Message"></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="signup">
+            <h2>Enroll in Hermann's Academy</h2>
+            <p>Ready to take your meeting booking skills to the next level? Sign up today and start your journey!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <br>
+                <input type="email" placeholder="Your Email" required>
+                <br>
+                <button type="submit">Enroll Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Hermann's Academy</p>
+    </footer>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var video = document.getElementById('hermannvideo');
+      var button = document.getElementById('playButton');
+  
+      function playVideo() {
+        // Play the video
+        video.play();
+  
+        // Once the video is playing, hide the button
+        button.style.display = 'none';
+      }
+  
+      // Optional: if you want the button to reappear when the video is paused
+      video.addEventListener('pause', function() {
+        button.style.display = 'block';
+      });
+      
+      // Optional: if you want the button to disappear again once video ends
+      video.addEventListener('ended', function() {
+        button.style.display = 'block';
+      });
+  
+      // Bind the click event to the button
+      button.addEventListener('click', playVideo);
+    });
+  </script>
