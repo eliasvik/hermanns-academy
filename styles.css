@@ -31,7 +31,7 @@ header {
     background: #01182e;
     color: #fff;
     padding-top: 0px;
-    height: 100vh;
+    height: 90%;
     padding-bottom: 25px;
 }
 
@@ -39,9 +39,9 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
     padding: 0vw 2vw;
     background-color: #002243;
+    height: 10%;
 }
 
 iframe {
