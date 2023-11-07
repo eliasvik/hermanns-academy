@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermann's Academy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>Hermann's Academy</div>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <img src="logo.png" id="logo">
+            <h1>Become a Master of Meeting Booking</h1>
+            <p>Join Hermann the Kaiser in mastering the art of power booking days.</p>
+                <iframe id="iframe" src="https://streamable.com/e/8j977q" frameborder="0"></iframe>
+            <br>
+            <a href="https://letmegooglethat.com/?q=how+2+git+gud+at+sales" class="cta-button">Enroll Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h2>Our Programme at Hermann's Academy</h2><br>
+            <div class="course">
+                <h3>Welcome to a New Era of Sales Mastery!</h3><br>
+                <p>Dive into the Hermann's Academy curriculum where traditional sales techniques meet the innovative edge of today’s market demands.
+                     Our comprehensive programme is crafted by industry titans with one goal in mind: transforming enthusiastic learners into master deal-closers. <br><br>Here's a sneak peek:</p>
+                    <li><strong>Sales Fundamentals:</strong> Grasp the age-old art of persuasion, now with a digital twist.</li>
+                    <li><strong>Lead Generation:</strong> Learn the secret digital handshake that brings prospects knocking.</li>
+                    <li><strong>Engagement Tactics:</strong> Engage in dialogues that convert handshakes into signatures.</li>
+                    <li><strong>Closing Strategies:</strong> Master the fine line between persistence and charm to seal deals.</li>
+                    <br>
+                    <p>Our programme is an adrenaline-fueled journey towards your personal and professional zenith. <br>Suit up, it's not just a course; it's a metamorphosis!</p>
+            </div>
+            <br>
+        </section>
+
+        <section id="about">
+            <h2>The Way of the Cactus</h2>
+            <h3>Embrace the Prickle of Success!</h3>
+            <p>Hermann's Academy introduces a motivational oddity - the way of the cactus. Should you weather the desert of your goals and blossom against the odds, Hermann himself honors you with the Academy's emblematic cactus tattoo. It’s our quirky rite of passage.
+                However, fall short, and you'll feel the cactus - metaphorically, of course. Our comically ironic approach is no joke; it’s the spiky embrace reminding you that every 'ouch' is a step closer to flourishing. It’s not just a course; it's an odyssey, with the cactus as your thorny compass to success.</p>
+        </section>
+
+        <section id="three">
+            <h2>Overpromise and Underdelivering is Key</h2>
+            <h3>The secret to sales</h3>
+            <p>Ever heard the mantra, "Shoot for the moon; if you miss, you'll land among the stars"? At Hermann's Academy, we chuckle and then rewrite it: "Promise them the galaxy, and when you hand them a star, they’ll be too dazzled to notice!" This is the tongue-in-cheek kernel of wisdom you’ll explore in our Overpromise and Underdeliver module.</p>
+            <br>
+            <p>But fret not, this ironic module is a satirical stab at the outdated sales tactics some still swear by. Our aim? To highlight the absurdity so you can truly understand the value of honest, reliable sales strategies that build lasting relationships and genuine upsell opportunities. It's sales with a smile and a wink!</p>
+        </section>
+
+        <section id="four">
+            <h2>Leveraging AI for Inbound Lead Floods</h2>
+            <h3>AI: Your Secret Weapon for LinkedIn Dominance!</h3>
+            <p>Unleash the floodgates of leads with the power of AI! At Hermann's Academy, we’ve cracked the code to crafting LinkedIn posts so engaging that your inbox will be the envy of the Norse gods. With a pinch of AI magic and a dash of your personal brand, watch as your digital presence commands the attention of eager clients.</p>
+            <br>
+            <p>Our sessions include hands-on workshops where you’ll master using tools like ChatGPT to curate content that resonates and converts. Get ready to navigate a tsunami of inbound leads with AI-crafted posts that are nothing short of legendary. It’s not just networking; it's casting a digital net wide and irresistible!</p>
+            <br>
+            <p>Join Hermann's Academy, and let's inject some delightful satire into the world of sales while equipping you with serious skills that guarantee success, laughter, and maybe even a new tattoo. Welcome aboard! 🌵🚀</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <br>
+                <input type="email" placeholder="Your Email" required>
+                <br>
+                <textarea placeholder="Your Message"></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="signup">
+            <h2>Enroll in Hermann's Academy</h2>
+            <p>Ready to take your meeting booking skills to the next level? Sign up today and start your journey!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <br>
+                <input type="email" placeholder="Your Email" required>
+                <br>
+                <button type="submit">Enroll Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Hermann's Academy</p>
+    </footer>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var video = document.getElementById('hermannvideo');
+      var button = document.getElementById('playButton');
+  
+      function playVideo() {
+        // Play the video
+        video.play();
+  
+        // Once the video is playing, hide the button
+        button.style.display = 'none';
+      }
+  
+      // Optional: if you want the button to reappear when the video is paused
+      video.addEventListener('pause', function() {
+        button.style.display = 'block';
+      });
+      
+      // Optional: if you want the button to disappear again once video ends
+      video.addEventListener('ended', function() {
+        button.style.display = 'block';
+      });
+  
+      // Bind the click event to the button
+      button.addEventListener('click', playVideo);
+    });
+  </script>
