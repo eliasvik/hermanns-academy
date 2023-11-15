@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
 /* Apply a natural box layout model to all elements */
 *, *:before, *:after {
     box-sizing: border-box;
@@ -14,10 +17,17 @@ body, h1, h2, h3, p {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lora', serif;
+    font-weight: 100;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+}
+
 
 /* Simple grid & centering */
 .container {
