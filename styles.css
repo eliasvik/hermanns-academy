@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Open+Sans:wght@300;400&display=swap');
 
 /* Apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -17,8 +16,8 @@ body, h1, h2, h3, p {
 }
 
 body {
-    font-family: 'Lora', serif;
-    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
@@ -38,7 +37,7 @@ h1, h2 {
 
 /* Header and nav styles */
 header {
-    background: #01182e;
+    background: #001a31;
     color: #fff;
     padding-top: 0px;
     height: 90%;
@@ -54,9 +53,11 @@ header nav {
     height: 10%;
 }
 
-iframe {
+iframe, iframe a {
     width: 50vw;
     height: 40vh;
+    font-family: 'Lora', serif;
+    font-weight: 500;
 }
 
 header nav ul {
@@ -118,7 +119,25 @@ main h2 {
     margin: 20px 0;
 }
 
+main h3 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+main p{
+    text-align: left !important;
+}
+
 .course, section {
     background: #f4f4f4;
-    padding:
+    margin: 10vh 0;
+}
+
+form {
+    margin-top: 2vh;
+}
+
+form input {
+    margin-bottom: 1vh;
 }
